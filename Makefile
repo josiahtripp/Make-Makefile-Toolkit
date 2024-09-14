@@ -8,7 +8,7 @@ CC = g++
 CFLAGS = -g -Wall -Wextra #Compile with all errors and warnings
 TARGET = MakeToolkit
 
-default: TARGET #Using $(TARGET) as a target name caused issues
+default: TARGET #Using "$(TARGET)" as a target name caused issues
 
 TARGET: main.o Employee.o Officer.o Supervisor.o
 	$(CC) $(CFLAGS) -o $(TARGET) main.o Employee.o Officer.o Supervisor.o
