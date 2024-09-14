@@ -1,0 +1,5 @@
+#Ignore any object files, emacs backups, and executible binary.
+
+*.o
+*~
+MakeToolkit
